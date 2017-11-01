@@ -115,15 +115,15 @@ void fixedbiusQuaternionCalc(float kSpeed, float rSpeed, float tSpeed)
 }
 
 int main(){
-	char const* const dirdata	 = "C:/Users/vmed/fixbius/logs/datain.txt"
+	char const* const dirdata	 = "C:/Users/vmed/fixbius/logs/datain.txt";
 	char const* const dirfixout	 = "C:/Users/vmed/fixbius/logs/fix.txt";
-	//char const* const dirfltout	 = "C:/Download/float.txt";
+
 	
 	char line[10];
 
 	FILE* filedat	= fopen(dirdata, "r");
 	FILE* filefix	= fopen(dirfixout, "w");	 
-	//FILE* fileflt	= fopen(dirfltout, "w");
+
 
 	float SpeedKren, SpeedRysk, SpeedTang;
 	double ftemp;
@@ -143,7 +143,6 @@ int main(){
 			}
 			fprintf(filefix, "\n");
 
-			//printf("\n");
 			c=0;
 			break;
 		case(5):
@@ -160,7 +159,7 @@ int main(){
 	}
 	fclose(filedat);
 	fclose(filefix);
-	fclose(fileflt);
+
 
 	getch();
 	return 0;
