@@ -1,4 +1,4 @@
-### the use fixed-point arithmetic in bius
+### the use fixed-point arithmetic
 this rep consists of
 + fixedQuatCalc(trying to use fixed-point arithmetic on non-target machine)
 + results
